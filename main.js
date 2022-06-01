@@ -73,20 +73,20 @@ console.log(
 // Takes an array of words
 // Returns a new array of words
 // Figure out the difference with the examples below and use an array iterator method to implement it.
-// // EXAMPLE INPUT -> ["please camel", "join casing", "these disco", "with shoes"];
+const  INPUT =  ["please camel", "join casing", "these disco", "with shoes"];
 // // EXPECTED OUTPUT -> ["pleaseCamel", "joinCasing", "theseDisco", "withShoes"]
 
 
 
-const capitalizeSecondItem (arr) => {
-    if (arr.length > 1) {
-      arr[1] = arr[1].charAt(0).toUpperCase() + arr[1].slice(1);
-    }
-  
-    return arr;
+const capitalizeSecondItem = (array) => {
+    return array.filter(arr => {
+    arr[1].charAt(0).toUpperCase() + arr[1].slice(1);
+})
   }
-  
-// Write a function that:
+
+  console.log(capitalizeSecondItem(INPUT))
+
+// / Write a function that:
 
 // Takes an array of scrabble tile objects
 // Returns a score
